@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.EmployeeMapper">
+    <select id="findAllEmployeeMapper" resultType="employee">
+        select *
+        from employee
+    </select>
+    <select id="findOneEmployeeMapper" parameterType="int" resultType="employee">
+        select *
+        from employee
+        where id = #{id}
+    </select>
+    <insert id="addOneEmployeeMapper" parameterType="employee">
+        insert into mybatis.employee(name, age, position)
+        VALUES (#{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{position,jdbcType=VARCHAR})
+    </insert>
+    <delete id="delOneEmployeeMapper" parameterType="int">
+        delete
+        from employee
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <update id="updateOneEmployeeMapper" parameterType="employee">
+        update employee
+        set name     = #{name,jdbcType=VARCHAR},
+            age      = #{age,jdbcType=INTEGER},
+            position =#{position,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="likeEmployeeMapper" parameterType="employee" resultType="employee">
+        select * from employee where name  like CONCAT('%',CONCAT(#{name},'%'))
+    </select>
+</mapper>
