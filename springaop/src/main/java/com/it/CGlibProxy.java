@@ -1,8 +1,5 @@
 package com.it;
 
-
-
-
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -13,12 +10,13 @@ import java.lang.reflect.Method;
 
 public class CGlibProxy implements MethodInterceptor {
 
-    private Object obj;
+    private final Object obj;
+
     public CGlibProxy(Object obj) {
         this.obj = obj;
     }
 
-    public Object getProxy(){
+    public Object getProxy() {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(obj.getClass());
         enhancer.setCallback(this);

@@ -27,4 +27,9 @@ public class Test {
         proxy.addUser();
         proxy.deleteUsr();
     }
+    @org.junit.Test
+    public void AopXml(){
+        UserDao userDao = app.getBean("userDao",UserDao.class);
+        userDao.deleteUsr();
+    }
 }

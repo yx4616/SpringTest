@@ -2,15 +2,25 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context
-  http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.it" />
+  http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:component-scan base-package="com.it"/>
+<!--    <bean id="userDao" class="com.it.impl.UserDaoImpl"/>-->
     <bean id="userDaoJDKProxy" class="com.it.JDKProxy">
         <constructor-arg ref="userDao"/>
     </bean>
     <bean id="userDaoCGlibProxy" class="com.it.CGlibProxy">
         <constructor-arg ref="userDao"/>
     </bean>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="pointcut" expression="execution(* com.it.impl.UserDaoImpl.*(..))"/>
+        <aop:aspect ref="aspect">
+            <aop:before method="cheak_Permission" pointcut-ref="pointcut"/>
+            <aop:after method="log" pointcut-ref="pointcut"/>
+        </aop:aspect>
+    </aop:config>
 </beans>
