@@ -12,8 +12,7 @@ public interface UsersMapper {
             @Result(id = true, column = "id", property = "id"),
             @Result(column = "username", property = "username"),
             @Result(column = "address", property = "address"),
-            @Result(column = "id", property = "ordersList",
-                    many = @Many(select = "com.rjxy.dao.OrderMapper.selectOrdersByUserId"))
+            @Result(column = "id", property = "ordersList", many = @Many(select = "com.rjxy.dao.OrderMapper.selectOrdersByUserId"))
     })
     Users selectUserById(int id);
 }

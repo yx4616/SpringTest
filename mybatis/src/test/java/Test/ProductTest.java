@@ -17,6 +17,7 @@ public class ProductTest {
         //关闭session
         session.close();
     }
+
     @Test
     public void test2(){
         SqlSession session = MyBatisUtils.getSession();

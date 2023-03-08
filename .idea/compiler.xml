@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springioc" />
+        <module name="springaop" />
+        <module name="mybatis" />
+        <module name="spring-Mabatis" />
         <module name="springJDBC" />
         <module name="springBoot" />
-        <module name="springaop" />
         <module name="springMVC" />
-        <module name="mybatis" />
       </profile>
     </annotationProcessing>
   </component>

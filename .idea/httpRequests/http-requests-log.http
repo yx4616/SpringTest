@@ -1,0 +1,16 @@
+GET http://localhost/hello
+
+###
+
+GET http://localhost/GET/hello
+
+###
+
+GET http://hello
+
+###
+
+GET http://add
+
+###
+

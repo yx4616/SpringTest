@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="dataSource" class=
-            "org.springframework.jdbc.datasource.DriverManagerDataSource">
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:property-placeholder location="classpath:db.properties"/>
+    <context:component-scan base-package="com.it"/>
+    <!-- 1.配置数据源 -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <!--数据库驱动 -->
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="driverClassName" value="${mysql.driver}"/>
         <!--连接数据库的url -->
-        <property name="url"
-                  value="jdbc:mysql://localhost/spring?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=Asia/Shanghai"/>
+        <property name="url" value="${mysql.url}"/>
         <!--连接数据库的用户名 -->
-        <property name="username" value="root"/>
+        <property name="username" value="${mysql.username}"/>
         <!--连接数据库的密码 -->
-        <property name="password" value="111111"/>
+        <property name="password" value="${mysql.password}"/>
     </bean>
-    <!-- 2配置JDBC模板 -->
-    <bean id="jdbcTemplate"
-          class="org.springframework.jdbc.core.JdbcTemplate">
+    <!-- 2.配置JDBC模板 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <!-- 默认必须使用数据源 -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+
+
+    <!--1.事务管理器，用于创建事务/提交/回滚-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+    <!--2.事务通知配置，决定哪些方法使用事务，哪些方法不使用事务-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--目标方法名为batchImport时需要使用声明式事务，成功提交，运行时异常的回滚-->
+            <tx:method name="transfer" propagation="REQUIRED" isolation="DEFAULT"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--3.定义声明式事务的作用范围，作用在哪些类上-->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.it.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
+    </aop:config>
 </beans>

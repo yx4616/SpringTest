@@ -22,6 +22,5 @@ public interface OrderMapper {
             @Result(column = "number",property = "number"),
             @Result(column = "id",property = "productList",many = @Many(select = "com.rjxy.dao.ProductMapper.selectProductByOrderId"))
     })
-
     Orders selectOrdersById(int id);
 }

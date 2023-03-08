@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="springMVC:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51b1ceb8-a59e-4aaa-8719-2b36b919d7ad" name="变更" comment="kk">
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/java/com/it/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/java/com/it/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/java/com/it/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/java/com/it/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/application-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/application-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/test/java/com/it/dao/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-Mabatis/src/test/java/com/it/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/main/java/com/it/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/main/java/com/it/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/main/java/com/it/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/main/java/com/it/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springJDBC/src/test/java/com/it/dao/impl/AccountDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/rjxy/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/rjxy/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/rjxy/dao/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/com/rjxy/dao/UsersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/test/java/Test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/test/java/Test/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/test-classes/Test/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/test-classes/Test/ProductTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springJDBC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springJDBC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springJDBC/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springJDBC/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springJDBC/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springJDBC/target/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springJDBC/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/springJDBC/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC/src/main/java/com/it/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC/src/main/java/com/it/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC/src/main/java/com/it/controller/TestController.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/springBoot">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../../../下载/SpringBoot">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="MyBatisGenerator" />
+        <option value="Jsp File" />
+        <option value="log4j" />
+        <option value="mybatis-config" />
+        <option value="spring-beans.schema" />
+        <option value="Mapper" />
+        <option value="JUnit3 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MWzVKU1SHaOSdxkRy5890yhxFm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/springJDBC/src/main/java/com/it/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springJDBC/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.56206894" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.it.service.impl" />
+      <recent name="com.it.dao.impl" />
+      <recent name="com.it.dao" />
+      <recent name="com.it.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHubWare\com.it\spring\springJDBC\src\main\resources" />
+      <recent name="D:\GitHubWare\com.it\spring\springBoot" />
+      <recent name="D:\GitHubWare\com.it\spring\springBoot\src\main\resources" />
+      <recent name="D:\GitHubWare\com.it\spring\springaop\src\main\resources" />
+      <recent name="D:\GitHubWare\com.it\spring\springioc\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHubWare\com.it\spring\springMVC\src\main\resources" />
+      <recent name="D:\GitHubWare\com.it\spring\springMVC\src\main\resources\SpringMVC" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.it.dao.impl" />
+      <recent name="com.it.service" />
+      <recent name="com.it.dao" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountDaoImplTest">
+    <configuration name="AccountDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springJDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.it.dao.impl.AccountDaoImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountDaoImplTest.testFindAllAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springJDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.it.dao.impl.AccountDaoImplTest" />
+      <option name="METHOD_NAME" value="testFindAllAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountDaoImplTest.testTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springJDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.it.dao.impl.AccountDaoImplTest" />
+      <option name="METHOD_NAME" value="testTransfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CategoryTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-Mabatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.it.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.it.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.it.springboot.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UFT-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springMVC:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a8f0b3dd-5e07-4277-a970-568deb94083e" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53503" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springMVC:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AccountDaoImplTest.testFindAllAccount" />
+      <item itemvalue="JUnit.CategoryTest.test" />
+      <item itemvalue="JUnit.AccountDaoImplTest.testTransfer" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Tomcat 服务器.Tomcat 9.0.65" />
+      <item itemvalue="JUnit.UserDaoTest.test2" />
+      <item itemvalue="JUnit.AccountDaoImplTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountDaoImplTest" />
+        <item itemvalue="JUnit.AccountDaoImplTest.testTransfer" />
+        <item itemvalue="JUnit.AccountDaoImplTest.testFindAllAccount" />
+        <item itemvalue="JUnit.UserDaoTest.test2" />
+        <item itemvalue="JUnit.CategoryTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="51b1ceb8-a59e-4aaa-8719-2b36b919d7ad" name="变更" comment="" />
+      <created>1677898151654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677898151654</updated>
+      <workItem from="1677898153896" duration="123000" />
+      <workItem from="1677898298929" duration="894000" />
+      <workItem from="1677899219880" duration="210000" />
+      <workItem from="1677900310465" duration="2505000" />
+      <workItem from="1677903129891" duration="4280000" />
+      <workItem from="1677911445703" duration="6222000" />
+      <workItem from="1677923253220" duration="1193000" />
+      <workItem from="1677926448505" duration="327000" />
+      <workItem from="1677926945920" duration="114000" />
+      <workItem from="1677927109470" duration="955000" />
+      <workItem from="1677928715721" duration="1251000" />
+      <workItem from="1677930687155" duration="1298000" />
+      <workItem from="1677976432966" duration="564000" />
+      <workItem from="1677977017074" duration="740000" />
+      <workItem from="1677977841957" duration="315000" />
+      <workItem from="1677978191099" duration="134000" />
+      <workItem from="1677978396438" duration="81000" />
+      <workItem from="1677978634373" duration="174000" />
+      <workItem from="1677978936425" duration="65000" />
+      <workItem from="1677979112919" duration="187000" />
+      <workItem from="1677979328026" duration="1313000" />
+      <workItem from="1677980669658" duration="384000" />
+      <workItem from="1677981087540" duration="270000" />
+      <workItem from="1677981645320" duration="132000" />
+      <workItem from="1677981897577" duration="3193000" />
+      <workItem from="1677989122465" duration="4421000" />
+      <workItem from="1678001772269" duration="5417000" />
+      <workItem from="1678011416300" duration="2277000" />
+      <workItem from="1678080332050" duration="230000" />
+      <workItem from="1678081496893" duration="9749000" />
+      <workItem from="1678093448015" duration="6435000" />
+      <workItem from="1678150926823" duration="7950000" />
+      <workItem from="1678174426512" duration="1791000" />
+      <workItem from="1678181123855" duration="525000" />
+      <workItem from="1678183252102" duration="1393000" />
+      <workItem from="1678234332061" duration="5969000" />
+      <workItem from="1678249256553" duration="315000" />
+      <workItem from="1678249593596" duration="2703000" />
+      <workItem from="1678252334790" duration="1540000" />
+      <workItem from="1678259181367" duration="6458000" />
+    </task>
+    <task id="LOCAL-00001" summary="kk">
+      <created>1677899888927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677899888927</updated>
+    </task>
+    <task id="LOCAL-00002" summary="kk">
+      <created>1677899973548</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677899973548</updated>
+    </task>
+    <task id="LOCAL-00003" summary="kk">
+      <created>1677900050898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677900050898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="kk">
+      <created>1677900359671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677900359671</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kk">
+      <created>1677906868844</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677906868844</updated>
+    </task>
+    <task id="LOCAL-00006" summary="kk">
+      <created>1678012559117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678012559117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../springioc" />
+    </ignored-roots>
+    <MESSAGE value="kk" />
+    <option name="LAST_COMMIT_MESSAGE" value="kk" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springJDBC/src/main/java/com/it/dao/impl/AccountDaoImpl.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springJDBC/src/main/java/com/it/dao/impl/AccountDaoImpl.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
