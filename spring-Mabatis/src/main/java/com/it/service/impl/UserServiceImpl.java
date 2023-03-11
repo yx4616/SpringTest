@@ -1,7 +1,7 @@
 package com.it.service.impl;
 
 import com.it.dao.UserDao;
-import com.it.pojo.User;
+import com.it.vo.User;
 import com.it.service.UserService;
 import org.springframework.stereotype.Service;
 

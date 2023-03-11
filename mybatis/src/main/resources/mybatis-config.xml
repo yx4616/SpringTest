@@ -34,6 +34,7 @@
     </environments>
     <!-- mapping文件路径配置 -->
     <mappers>
+        <mapper class="com.rjxy.dao.StudentMapper"/>
         <mapper class="com.rjxy.dao.ProductMapper"/>
         <mapper class="com.rjxy.dao.OrderMapper"/>
         <mapper class="com.rjxy.dao.UsersMapper"/>
@@ -51,4 +52,5 @@
         <mapper resource="mapper/CustomerMapper.xml"/>
         <mapper resource="mapper/StudentMapper.xml"/>
     </mappers>
+
 </configuration>

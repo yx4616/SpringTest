@@ -11,13 +11,13 @@
 <!--    <context:property-placeholder location="classpath:/myConfig.properties"/>-->
     <!-- 将指定类配置给Spring，让Spring创建HelloSpring对象的实例 -->
 
-    <bean id="user" class="com.it.pojo.User">
+    <bean id="user" class="com.it.vo.User">
         <constructor-arg name="id" value="1"/>
         <constructor-arg name="name" value="123"/>
         <constructor-arg name="password" value="456"/>
     </bean>
 
-    <bean id="user2" class="com.it.pojo.User">
+    <bean id="user2" class="com.it.vo.User">
         <property name="password" value="456"/>
         <property name="name" value="123"/>
         <property name="id" value="1"/>

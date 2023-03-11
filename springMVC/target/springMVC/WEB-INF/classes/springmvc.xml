@@ -13,10 +13,23 @@
     <context:component-scan base-package="com.it.controller"/>
     <!--开启注解启动-->
     <mvc:annotation-driven/>
+
     <!--配置视图解析器-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="prefix" value="/page/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    <mvc:resources mapping="/page/**" location="/page/"/>
+
+    <bean id="converterService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <!-- 给工厂注入一个新的类型转换器 -->
+        <property name="converters">
+            <array>
+                <!-- 配置自定义类型转换器 -->
+                <bean class="com.it.convert.DateConverter"/>
+            </array>
+        </property>
+    </bean>
+    <mvc:annotation-driven conversion-service="converterService"/>
 </beans>
 

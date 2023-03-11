@@ -33,7 +33,7 @@
       <artifactId>spring-context</artifactId>
       <version>5.0.4.RELEASE</version>
     </dependency>
-    <!--springMVc的依赖-->
+    <!--springMVC的依赖-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
@@ -45,12 +45,30 @@
       <scope>provided</scope>
       <version>2.5</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.0.4.RELEASE</version>
+    </dependency>
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
       <version>2.0</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.14.1</version>
+    </dependency>
+
   </dependencies>
 
   <build>

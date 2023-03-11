@@ -1,9 +1,7 @@
 package com.it.dao;
 
-import com.it.pojo.User;
+import com.it.vo.User;
 import junit.framework.TestCase;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

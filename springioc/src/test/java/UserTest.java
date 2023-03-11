@@ -1,15 +1,12 @@
 import com.it.SpringConfig;
 import com.it.Student;
-import com.it.dao.UserDao;
-import com.it.pojo.User;
+import com.it.vo.User;
 import com.it.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.swing.*;
 
 public class UserTest {
     ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");

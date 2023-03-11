@@ -34,7 +34,7 @@
         <!--配置mapper文件的路径-->
         <property name="mapperLocations" value="classpath:mappers/*Mapper.xml"/>
         <!--配置需要定义别名的实体类的包-->
-        <property name="typeAliasesPackage" value="com.it.pojo"/>
+        <property name="typeAliasesPackage" value="com.it.vo"/>
         <!--可选：配置MyBatis的主配置文件-->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
     </bean>

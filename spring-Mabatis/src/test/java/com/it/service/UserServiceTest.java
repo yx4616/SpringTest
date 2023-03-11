@@ -1,6 +1,6 @@
 package com.it.service;
 
-import com.it.pojo.User;
+import com.it.vo.User;
 import com.it.service.impl.UserServiceImpl;
 import junit.framework.TestCase;
 import org.springframework.context.ApplicationContext;

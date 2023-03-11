@@ -11,6 +11,7 @@ public class AuthController {
         System.out.println("得到");
         System.out.println("test01执行了");
         System.out.println(id);
-        return "success";
+        return "/WEB-INF/success.jsp";
     }
+
 }

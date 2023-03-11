@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AccountDaoImplTest extends TestCase {
     ApplicationContext app = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-    AccountDaoImpl accountDao = (AccountDaoImpl) app.getBean("accountDao");
+    AccountDao accountDao = (AccountDao) app.getBean("accountDao");
     AccountService accountService = (AccountService) app.getBean("accountService");
     public void testAddAccount() {
         Account account = (Account) app.getBean("account");
