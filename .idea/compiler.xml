@@ -11,6 +11,7 @@
         <module name="springaop" />
         <module name="mybatis" />
         <module name="spring-Mabatis" />
+        <module name="cloudlibrary" />
         <module name="springJDBC" />
         <module name="springBoot" />
         <module name="springMVC" />

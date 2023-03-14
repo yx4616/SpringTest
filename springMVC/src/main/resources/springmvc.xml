@@ -19,7 +19,10 @@
         <property name="prefix" value="/page/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <!--静态资源放行-->
     <mvc:resources mapping="/page/**" location="/page/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
 
     <bean id="converterService" class="org.springframework.context.support.ConversionServiceFactoryBean">
         <!-- 给工厂注入一个新的类型转换器 -->
@@ -31,5 +34,12 @@
         </property>
     </bean>
     <mvc:annotation-driven conversion-service="converterService"/>
+
+    <!--上传下载文件-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10240000"/>
+        <property name="maxInMemorySize" value="102400"/>
+        <property name="defaultEncoding" value="utf-8"/>
+    </bean>
 </beans>
 
